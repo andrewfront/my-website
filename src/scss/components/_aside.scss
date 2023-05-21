@@ -1,0 +1,42 @@
+.aside {
+
+}
+.aside-content {
+    max-width: 300px;
+    text-align: center;
+    position: relative;
+}
+.aside-bg-img {
+position: relative;
+margin-bottom: 53px;
+}
+.aside-bg-photo {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+position: absolute;
+left: 50%;
+right: 50%;
+bottom: 0px;
+top: 122px;
+transform: translateX(-50%);
+}
+.aside-title {
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+    span {
+        display: block;
+        font-weight: 400;
+        line-height: 25px;
+        font-size: 14px;
+        margin-top: 12px;
+    }
+}
+.aside-contacts {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-bottom: 23px;
+}

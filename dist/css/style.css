@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,300;1,400&family=Roboto&family=Roboto+Condensed:wght@400;700&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background: #FFE9EB;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.footer {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: #F3929D;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  gap: 0 37px;
+  padding: 10px 0;
+}
+
+.menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 37px;
+}
+
+.menu-link {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.menu-link:hover {
+  color: #000000;
+}
+
+@media (max-width: 397px) {
+  .menu-list {
+    gap: 20px;
+  }
+  .menu-link {
+    font-size: 12px;
+  }
+}
+.aside-content {
+  max-width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.aside-bg-img {
+  position: relative;
+  margin-bottom: 53px;
+}
+
+.aside-bg-photo {
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 0px;
+  top: 122px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.aside-title {
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+.aside-title span {
+  display: block;
+  font-weight: 400;
+  line-height: 25px;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.aside-contacts {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-bottom: 23px;
+}

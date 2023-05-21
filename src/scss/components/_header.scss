@@ -1,0 +1,33 @@
+.header {
+    background-color: $pink;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0 37px;
+    padding: 10px 0;
+}
+.menu-list {
+    display: flex;
+    align-items: center;
+    gap: 37px;
+}
+.menu-link {
+    color: $white;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    transition: all 0.3s linear;
+    &:hover {
+        color: $black;
+    }
+}
+@media (max-width: 397px) {
+    .menu-list {
+        gap: 20px;
+    }
+    .menu-link {
+        font-size: 12px;
+    }
+}
