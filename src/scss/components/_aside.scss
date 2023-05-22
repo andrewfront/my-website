@@ -1,3 +1,7 @@
+.header-inner {
+    display: flex;
+    align-items: center;
+}
 .aside {
 
 }
@@ -40,3 +44,30 @@ transform: translateX(-50%);
     font-weight: 600;
     margin-bottom: 23px;
 }
+.aside-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 32px;
+}
+.telegram,
+.whatsapp,
+.phone {
+    -webkit-animation: pulsate-fwd 3s ease-in-out infinite both;
+	        animation: pulsate-fwd 3s ease-in-out infinite both;
+}
+@keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
