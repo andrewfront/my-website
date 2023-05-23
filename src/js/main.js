@@ -6,6 +6,7 @@
 // import slider from './modules/slider'
 // import fixed from './modules/fixed'
 // import cartSettings from './modules/cartSettings'
+import slider from './modules/slider'
 window.addEventListener('DOMContentLoaded', () => {
-
+    slider()
 })
