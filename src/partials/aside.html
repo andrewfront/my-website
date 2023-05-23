@@ -3,8 +3,16 @@
     <div class="header-inner">
         <aside class="aside">
                 <div class="aside-content">
-                    <img class="aside-bg-img" src="images/aside/asidebg.jpg" alt="table">
-                    <img class="aside-bg-photo" src="images/aside/asidephoto.jpg" alt="avatar">
+                    <picture>
+                        <source srcset="images/aside/asidebg.webp" type="image/webp">
+                        <img loading="lazy" src="images/aside/asidebg.jpg" class="aside-bg-img" width="" height="" alt="aside-bg">
+                      </picture>
+                    <picture>
+                        <source srcset="images/aside/asidephoto.webp" type="image/webp">
+                        <img loading="lazy" src="images/aside/asidephoto.jpg" class="aside-bg-photo" width="" height="" alt="aside-avatar">
+                    </picture>
+
+
                     <div class="aside-info">
                         <h1 class="aside-title">Андрей Митин <br><span>Преподаватель по английскому языку для детей от 7 лет, подготовка вашего ребенка к школе, обучение грамотному чтению и письму с выездом у вас на дому. Опыт преподования в частной школе 12 лет. Высшее образование по специальности лингвист-переводчик.</span></h1>
                         <p class="aside-contacts">Мои Контакты:</p>
@@ -33,8 +41,12 @@
             <div class="header-lessons">
 
             </div>
-            <div class="header-image"><img src="images/header-content/bg.jpg" alt="girlbg"></div>
+            <picture class="header-image">
+                <source srcset="images/header-content/bg.webp" type="image/webp">
+                <img loading="lazy" src="images/header-content/bg.jpg" class="image" width="" height="" alt="girlbg">
+              </picture>
         </div>
     </div>
 </div>
+
 </section>
