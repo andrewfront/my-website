@@ -1,62 +1,55 @@
-.header-content {
-    // margin-top: 30px;
-}
-.header-inner {
+.headerTop-inner {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    gap: 69px;
+    // align-items: center;
+    // justify-content: space-between;
 }
-.aside {
-margin-right: 96px;
+//********HEADERTOP-ASIDE*********////////
+.headerTop-aside {
+    flex-basis: 300px;
 }
-.aside-content {
-    max-width: 300px;
-    text-align: center;
+.headerTop-images {
     position: relative;
+    margin-bottom: 23px;
 }
-.aside-bg-img {
-position: relative;
-margin-bottom: 53px;
-}
-.aside-bg-photo {
+.headerTop-avatar {
     border-radius: 50%;
-    object-fit: cover;
-    width: 100px;
-    height: 100px;
-position: absolute;
-left: 50%;
-right: 50%;
-bottom: 0px;
-top: 69px;
-transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    top: 90px;
+    transform: translateX(-50%);
+}
+.avatar {
+    border-radius: 50%;
+}
+.aside-info {
+    text-align: center;
+    margin-bottom: 23px;
 }
 .aside-title {
     font-weight: 600;
-    line-height: 20px;
-    margin-bottom: 12px;
-    span {
-        display: block;
-        font-weight: 400;
-        line-height: 25px;
-        font-size: 14px;
-        margin-top: 12px;
-    }
-}
-.aside-contacts {
     font-size: 16px;
-    line-height: 28px;
-    font-weight: 600;
-    margin-bottom: 23px;
+    line-height: 20px;
+    span {
+        font-weight: 400;
+font-size: 14px;
+line-height: 25px;
+margin-bottom: 11px;
+text-align: justify;
+hyphens: auto;
+display: block;
+margin-top: 12px;
+    }
 }
 .aside-social {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 32px;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
-.telegram,
 .whatsapp,
+.telegram,
 .phone {
     -webkit-animation: pulsate-fwd 3s ease-in-out infinite both;
 	        animation: pulsate-fwd 3s ease-in-out infinite both;
@@ -75,10 +68,9 @@ transform: translateX(-50%);
               transform: scale(1);
     }
   }
-.aside-name_input,
+  .aside-name_input,
 .aside-phone_input,
 .aside-text_input {
-max-width: 210px;
 width: 100%;
 background-color: $grey;
 padding: 10px;
@@ -95,8 +87,7 @@ color: $white;
     resize: none;
 }
 .aside-submit_btn {
-    max-width: 210px;
-width: 100%;
+    width: 100%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
 border: none;
@@ -105,7 +96,8 @@ padding: 10px;
 color: $white;
 cursor: pointer;
 }
-.agreement {
+.aside-agreement {
+    text-align: center;
     margin-top: 23px;
     display: flex;
     align-items: center;
@@ -117,69 +109,96 @@ cursor: pointer;
         color: $black;
     }
 }
-.header-info {
-    display: flex;
-    align-self: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-.header-lessons {
-    // margin-right: 141px;
-    margin-bottom: 79px;
-}
-.header-lessons-title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 42px;
-    margin-bottom: 6px;
-}
-.header-lessons-list li {
-font-size: 16px;
-line-height: 28px;
-margin-bottom: 8px;
-position: relative;
-&::before {
-    content: '';
-    display: block;
-    background-image: url(../../images/header-content/checkbox.svg);
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    left: -29px;
-    top: 50%;
-    bottom: 50%;
-    transform: translateY(-50%);
-}
-}
-.header-quotes {
-    margin-left: -29px;
+//********HEADERTOP-CONTENT*********////////
+
+.headerTop-lessons-inner {
     display: flex;
     align-items: center;
-    gap: 324px;
+    gap: 141px;
+    margin-bottom: 79px;
 }
-.header-quotes_swiper {
+.headerTop-lessons-info {
+    margin-left: 29px;
+}
+.headerTop-lessons-title {
+    font-weight: 600;
+font-size: 24px;
+line-height: 42px;
+margin-bottom: 6px;
+}
+.headerTop-lessons-item {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 8px;
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        background-image: url(../../images/svg/checkbox.svg);
+        width: 20px;
+        height: 20px;
+        left: -29px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+}
+//********HEADERTOP-ADVANTAGES*********////////
+
+.headerTop-advantages-inner {
+    margin-bottom: 109px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    // gap: 132px;
+    // margin-left: -29px;
+}
+.headerTop-advantages-item {
+padding: 33px 20px;
+max-width: 214px;
+width: 100%;
+background-color: $white;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+text-align: center;
+svg {
+    margin-bottom: 21px;
+}
+}
+.headerTop-advantages-text {
+    font-style: italic;
+font-weight: 400;
+font-size: 12px;
+line-height: 21px;
+}
+//********HEADERTOP-QUOTES*********////////
+.headerTop-quotes {
+    display: flex;
+    align-items: center;
+    // gap: 184px;
+}
+.headerTop-quotes_swiper {
     max-width: 428px;
     background-color: $white;
     padding: 15px 32px;
     box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
 border-radius: 15px;
 }
-.header-quotes_swiper-slide {
+.headerTop-quotes_swiper-slide {
     display: flex;
     justify-content: space-between;
 }
 .quote {
     margin-right: 45px;
 }
-.header-quotes-text {
+.headerTop-quotes-text {
     font-style: italic;
 font-weight: 400;
 font-size: 12px;
 line-height: 21px;
 margin-bottom: 43px;
 }
-.header-quotes-name {
+.headerTop-quotes-name {
     font-weight: 600;
 font-size: 12px;
 line-height: 21px;
@@ -198,7 +217,7 @@ position: relative;
     transform: translateY(-50%);
 }
 }
-.header-quotes-content {
+.headerTop-quotes-content {
     position: relative;
     &::before {
         content: '';
@@ -253,30 +272,6 @@ transition: all 0.3s linear;
     background-color: $redonhover;
 }
 }
-.header-advantages {
-    // margin-top: 118px;
-    margin-bottom: 101px;
-    margin-left: -29px;
-}
-.header-advantages-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 132px;
-}
-.header-advantages-item {
-padding: 33px 20px;
-background-color: $white;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 15px;
-text-align: center;
-svg {
-    margin-bottom: 21px;
-}
-}
-.header-advantages-text {
-    font-style: italic;
-font-weight: 400;
-font-size: 12px;
-line-height: 21px;
+@media (max-width: 1368px) {
+
 }
