@@ -39,9 +39,12 @@ ul[class] {
   list-style: none;
 }
 
-img {
+img,
+picture {
   max-width: 100%;
   display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 input,
@@ -443,12 +446,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 69px;
+  -webkit-column-gap: 69px;
+  -moz-column-gap: 69px;
+  column-gap: 69px;
 }
 
 .headerTop-aside {
-  -ms-flex-preferred-size: 300px;
-  flex-basis: 300px;
+  max-width: 300px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .headerTop-images {
@@ -691,10 +697,16 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-column-gap: 50px;
+  -moz-column-gap: 50px;
+  column-gap: 50px;
 }
 
 .headerTop-quotes_swiper {
-  max-width: 428px;
+  margin: 0;
+  width: 428px;
+  max-width: 100%;
+  height: auto;
   background-color: #ffffff;
   padding: 15px 32px;
   -webkit-box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
@@ -825,4 +837,98 @@ body {
 }
 .header-subscribe-link:hover {
   background-color: #F43F5E;
+}
+
+@media (max-width: 1300px) {
+  .headerTop-inner {
+    -webkit-column-gap: 29px;
+    -moz-column-gap: 29px;
+    column-gap: 29px;
+  }
+  .headerTop-lessons-inner {
+    gap: 32px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .headerTop-lessons-title {
+    font-size: 18px;
+  }
+  .headerTop-lessons-item {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1121px) {
+  .headerTop-lessons-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .headerTop-advantages-inner {
+    gap: 10px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .headerTop-advantages-item {
+    max-width: 100%;
+  }
+  .headerTop-quotes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .headerTop-lessons-bg {
+    width: 100%;
+  }
+  .aside-agreement {
+    margin-top: 0;
+    margin-bottom: 23px;
+  }
+  .agreement-link {
+    display: inline-block !important;
+  }
+  .headerTop-quotes_swiper-slide {
+    max-width: 100%;
+    width: 100%;
+  }
+  .subscribe-section {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .subscribe-section svg {
+    display: none;
+  }
+  .header-subscribe-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 784px) {
+  .headerTop-aside {
+    max-width: 100%;
+  }
+  .headerTop-bg-resize {
+    width: 100%;
+  }
+  .headerTop-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .aside-agreement {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 23px;
+  }
 }

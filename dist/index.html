@@ -36,7 +36,7 @@
                 <div class="headerTop-images">
                 <picture class="headerTop-bg">
                   <source srcset="images/aside/asidebg.webp" type="image/webp">
-                  <img loading="lazy" src="images/aside/asidebg.jpg" alt="background">
+                  <img class="headerTop-bg-resize" loading="lazy" src="images/aside/asidebg.jpg" alt="background">
                 </picture>
                 <picture class="headerTop-avatar">
                   <source srcset="images/aside/asidephoto.webp" type="image/webp">
@@ -75,14 +75,14 @@
                 <label class="aside-text">
                     <textarea class="aside-text_input" name="text" id="text" cols="1" rows="1" placeholder="Ваше сообщение"></textarea>
                 </label>
+                <div class="aside-agreement">
+                    <label >
+                        <input type="checkbox">
+                        Я согласен (а) с <a class="agreement-link" href="#">политикой конфиденциальности</a>
+                    </label>
+                </div>
                 <button class="aside-submit_btn" type="submit">Оставить заявку</button>
             </form>
-            <div class="aside-agreement">
-                <label >
-                    <input type="checkbox">
-                    Я согласен (а) с <a href="#">политикой конфиденциальности</a>
-                </label>
-            </div>
             </aside>
             <div class="headerTop-content">
                 <div class="headerTop-lessons-inner">
@@ -98,7 +98,7 @@
                             <li class="headerTop-lessons-item">Стоимость 1го занятия (45 мин) 600 руб.</li>
                         </ul>
                     </div>
-                    <picture>
+                    <picture class="headerTop-lesson-resize-img">
                       <source srcset="images/headerTop-lessons/bg.webp" type="image/webp">
                       <img loading="lazy" src="images/headerTop-lessons/bg.jpg" class="headerTop-lessons-bg"  alt="girlbg">
                     </picture>

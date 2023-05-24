@@ -36,9 +36,11 @@ ul[class] {
     list-style: none;
 }
 
-img {
+img,
+picture {
     max-width: 100%;
     display: block;
+    object-fit: cover;
 }
 
 input,
