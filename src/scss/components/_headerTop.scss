@@ -1,3 +1,6 @@
+.headerTop {
+    margin-bottom: 99px;
+}
 .headerTop-inner {
     display: flex;
     column-gap: 69px;
@@ -99,7 +102,6 @@ cursor: pointer;
 }
 .aside-agreement {
     text-align: center;
-    margin-top: 23px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -293,6 +295,9 @@ transition: all 0.3s linear;
     }
 }
 @media (max-width: 1121px) {
+    .headerTop {
+        margin-bottom: 20px;
+    }
 .headerTop-lessons-inner {
     flex-direction: column;
     align-items: flex-start;
