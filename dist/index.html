@@ -35,19 +35,19 @@
             <aside class="headerTop-aside">
                 <div class="headerTop-images">
                 <picture class="headerTop-bg">
-                  <source srcset="images/aside/asidebg.webp" type="image/webp">
-                  <img class="headerTop-bg-resize" loading="lazy" src="images/aside/asidebg.jpg" alt="background">
+                  <source srcset="images/aside/asideavatar.webp" type="image/webp">
+                  <img class="headerTop-bg-resize" loading="lazy" src="images/aside/asideavatar.jpg" alt="background">
                 </picture>
-                <picture class="headerTop-avatar">
+                <!-- <picture class="headerTop-avatar">
                   <source srcset="images/aside/asidephoto.webp" type="image/webp">
                   <img class="avatar" loading="lazy" src="images/aside/asidephoto.jpg" alt="avatar">
-                </picture>
+                </picture> -->
             </div>
             <div class="aside-info">
                 <h1 class="aside-title">Андрей Митин <br><span>Преподаватель по английскому языку для детей от 7 лет, подготовка вашего ребенка к школе, обучение грамотному чтению и письму с выездом у вас на дому. Опыт преподования в частной школе 12 лет. Высшее образование по специальности лингвист-переводчик.</span></h1>
                 <p class="aside-contacts">Мои Контакты:</p>
             </div>
-            <div class="aside-social">
+            <div class="aside-social global-social">
                 <a href="https://wa.me/+79283041942" target="blank">
                     <svg class="whatsapp" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M25 50C11.195 50 0 38.805 0 25C0 11.195 11.195 0 25 0C38.805 0 50 11.195 50 25C50 38.805 38.805 50 25 50Z" fill="#000000"/>
@@ -263,8 +263,48 @@
         </div>
     </div>
 </section>
+            <section class="contacts">
+    <div class="container">
+        <div class="contacts-inner">
+            <div id="map" class="contacts-map"></div>
+            <div class="contacts-info">
+                <h2 class="contacts-title">КОНТАКТЫ:</h2>
+                <ul class="contacts-list">
+                    <li class="contacts-item contacts-item-phone">Телефон <a href="tel:+79283041942" class="contacts-link">+7 928 304-19-42</a></li>
+                    <li class="contacts-item contacts-item-email">Почта <a href="mailto:andrew.ndrw1@gmail.com" class="contacts-link">andrew.ndrw1@gmail.com</a></li>
+                </ul>
+                <div class="contacts-social global-social">
+                    <a href="https://wa.me/+79283041942" target="blank">
+                        <svg class="whatsapp" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 50C11.195 50 0 38.805 0 25C0 11.195 11.195 0 25 0C38.805 0 50 11.195 50 25C50 38.805 38.805 50 25 50Z" fill="#000000"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M36.6949 13.36C33.5949 10.255 29.4649 8.54504 25.0699 8.54004C16.0149 8.54004 8.63988 15.91 8.63988 24.97C8.63988 27.865 9.39488 30.695 10.8349 33.185L8.50488 41.7L17.2149 39.415C19.6149 40.725 22.3149 41.415 25.0649 41.415H25.0699C34.1249 41.415 41.4949 34.045 41.4999 24.985C41.5049 20.595 39.7999 16.465 36.6949 13.36ZM25.0749 38.64H25.0699C22.6199 38.64 20.2149 37.98 18.1199 36.735L17.6199 36.44L12.4499 37.795L13.8299 32.755L13.5049 32.24C12.1399 30.065 11.4149 27.555 11.4149 24.97C11.4199 17.44 17.5449 11.315 25.0799 11.315C28.7299 11.315 32.1549 12.74 34.7349 15.32C37.3149 17.9 38.7349 21.335 38.7299 24.98C38.7299 32.515 32.5999 38.64 25.0749 38.64ZM32.5649 28.41C32.1549 28.205 30.1349 27.21 29.7599 27.075C29.3849 26.94 29.1099 26.87 28.8349 27.28C28.5599 27.69 27.7749 28.615 27.5349 28.89C27.2949 29.165 27.0549 29.2 26.6449 28.995C26.2349 28.79 24.9099 28.355 23.3449 26.955C22.1249 25.865 21.2999 24.52 21.0599 24.11C20.8199 23.7 21.0349 23.475 21.2399 23.27C21.4249 23.085 21.6499 22.79 21.8549 22.55C22.0599 22.31 22.1299 22.14 22.2649 21.865C22.3999 21.59 22.3349 21.35 22.2299 21.145C22.1249 20.94 21.3049 18.92 20.9649 18.095C20.6299 17.295 20.2949 17.405 20.0399 17.39C19.7999 17.38 19.5249 17.375 19.2549 17.375C18.9799 17.375 18.5349 17.48 18.1599 17.89C17.7849 18.3 16.7249 19.295 16.7249 21.315C16.7249 23.335 18.1949 25.29 18.3999 25.56C18.6049 25.835 21.2949 29.98 25.4149 31.76C26.3949 32.185 27.1599 32.435 27.7549 32.625C28.7399 32.94 29.6349 32.895 30.3399 32.79C31.1299 32.67 32.7699 31.795 33.1099 30.84C33.4499 29.88 33.4499 29.06 33.3499 28.89C33.2499 28.72 32.9749 28.62 32.5649 28.41Z" fill="white"/>
+                            </svg>
+                    </a>
+                    <a href="https://t.me/+79283041942" target="blank">
+                        <svg class="telegram" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 0C11.1928 0 0 11.1928 0 25C0 38.8072 11.1928 50 25 50C38.8072 50 50 38.8072 50 25C50 11.1928 38.8072 0 25 0ZM36.5879 17.002C36.2117 20.9551 34.5838 30.5482 33.7552 34.9758C33.4048 36.8492 32.7147 37.4774 32.0468 37.5388C30.5952 37.6725 29.4925 36.5794 28.0864 35.6577C25.8861 34.2153 24.643 33.3174 22.5072 31.91C20.0389 30.2835 21.639 29.3898 23.0457 27.9281C23.4138 27.5458 29.8105 21.7275 29.9343 21.1997C29.9497 21.1337 29.9645 20.8872 29.8179 20.7578C29.6714 20.6283 29.456 20.6722 29.3003 20.7074C29.0797 20.7575 25.5646 23.0808 18.7551 27.6773C17.7575 28.3624 16.8538 28.6962 16.0441 28.6787C15.1514 28.6595 13.4344 28.1741 12.1579 27.7591C10.5922 27.2502 9.34788 26.9812 9.45625 26.1168C9.5127 25.6666 10.1327 25.2062 11.3161 24.7358C18.6042 21.5605 23.464 19.4671 25.8956 18.4555C32.8383 15.5677 34.2809 15.0661 35.2213 15.0494C35.4281 15.046 35.8905 15.0972 36.19 15.3402C36.3893 15.5134 36.5162 15.755 36.5459 16.0172C36.5966 16.3429 36.6107 16.6732 36.5879 17.002Z" fill="#000000"/>
+                            </svg>
+                    </a>
+                    <a href="tel:+79283041942" target="blank">
+                        <svg class="phone" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.40455 33.8987C0.58814 34.6506 -0.378657 36.6331 0.138921 38.5276L2.48267 47.1213C2.95142 48.8206 4.49439 50.0022 6.2522 50.0022C30.4124 50.0022 50.0022 30.4124 50.0022 6.2522C50.0022 4.49438 48.8206 2.95142 47.1213 2.48267L38.5276 0.138916C36.6331 -0.378662 34.6506 0.588135 33.8987 2.40454L29.9924 11.7795C29.3284 13.3713 29.7874 15.217 31.1252 16.301L35.9397 20.2463C32.6877 27.1213 27.1213 32.6877 20.2463 35.9397L16.3108 31.1252C15.217 29.7874 13.3811 29.3284 11.7893 29.9924L2.41431 33.8987H2.40455Z" fill="#000000"/>
+                            </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+<a href="tel:+79283041942" class="footer-phone">8-928-304-19-42</a>
+<div class="footer-copyright">©<span id="date">2023</span> madeBy | Andrej</div>
+<a href="mailto:andrew.ndrw1@gmail.com" class="footer-email">andrew.ndrw1@gmail.com</a>
+        </div>
+    </div>
+</footer>
     </div>
 <script src="js/main.js"></script>
 </body>

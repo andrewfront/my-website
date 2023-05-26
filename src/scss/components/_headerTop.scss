@@ -18,14 +18,15 @@
 }
 .headerTop-avatar {
     border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    bottom: 0px;
-    top: 90px;
-    transform: translateX(-50%);
+    // position: absolute;
+    // left: 50%;
+    // bottom: 0px;
+    // top: 90px;
+    // transform: translateX(-50%);
 }
 .avatar {
     border-radius: 50%;
+    margin: 10px auto 0;
 }
 .aside-info {
     text-align: center;
@@ -46,7 +47,7 @@ display: block;
 margin-top: 12px;
     }
 }
-.aside-social {
+.global-social {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -110,6 +111,10 @@ cursor: pointer;
     a {
         font-weight: 700;
         color: $black;
+        transition: all 0.3s linear;
+        &:hover {
+            color: #0000ff;
+        }
     }
 }
 //********HEADERTOP-CONTENT*********////////
@@ -354,5 +359,8 @@ transition: all 0.3s linear;
     justify-content: center;
     margin-top: 0;
     margin-bottom: 23px;
+}
+.headerTop-avatar {
+    // top: 100px;
 }
     }

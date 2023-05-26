@@ -161,7 +161,15 @@ font-weight: 400;
 font-size: 14px;
 line-height: 19px;
 }
+@media (max-width: 1176px) {
+    .info {
+        margin-bottom: 20px;
+    }
+}
 @media (max-width: 1128px) {
+    .info {
+        margin-bottom: 20px;
+    }
     .reviews {
         align-self: baseline;
     }
