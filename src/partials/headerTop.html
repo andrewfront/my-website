@@ -34,28 +34,32 @@
                         </svg>
                 </a>
             </div>
-            <form class="aside-form">
+            <form id="aside-form" class="aside-form" method="POST">
                 <label class="aside-name">
                     <input id="name" class="aside-name_input" type="text" name="name" placeholder="Введите имя">
+                    <div class="aside-name-container"></div>
                 </label>
                 <label class="aside-phone">
                     <input id="tel" class="aside-phone_input" type="tel" name="tel" placeholder="Телефон">
+                    <div class="aside-tel-container"></div>
                 </label>
                 <label class="aside-text">
-                    <textarea class="aside-text_input" name="text" id="text" cols="1" rows="1" placeholder="Ваше сообщение"></textarea>
+                    <textarea id="text" class="aside-text_input" name="text" id="text" cols="1" rows="1" placeholder="Ваше сообщение"></textarea>
                 </label>
-                <div class="aside-agreement">
-                    <label >
-                        <input type="checkbox">
-                        Я согласен(а) с <a class="agreement-link" href="#">политикой конфиденциальности</a>
+                <div class="aside-agreement-container">
+                    <label class="aside-agreement">
+                        <div class="aside-checkbox-container"></div>
+                        <input id="checkbox-validation" class="formCheckbox" type="checkbox" name="agreement">
+                        Я согласен(а) с
                     </label>
+                    <a class="agreement-link" href="#" target="_blank"> политикой конфиденциальности</a>
                 </div>
                 <button class="aside-submit_btn" type="submit">Оставить заявку</button>
             </form>
             </aside>
             <div class="headerTop-content">
                 <div class="headerTop-lessons-inner">
-                    <div class="headerTop-lessons-info">
+                    <div class="headerTop-lessons-info" id="lessons">
                         <h5 class="headerTop-lessons-title">Занятия:</h5>
                         <ul class="headerTop-lessons-list">
                             <li class="headerTop-lessons-item">Проводятся индивидуально</li>
